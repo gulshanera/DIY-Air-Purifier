@@ -11,7 +11,7 @@ This project includes both the **hardware setup** and **Arduino-based control co
 **Open Source** – Hardware design, circuit, and code freely available.  
 
 ## Hardware Requirements
-**PM<sub>2.5</sub> Sensor** - Sensirion's SEN50  
+**PM<sub>2.5</sub> Sensor** - Sensirion's SEN50 [Link](https://in.element14.com/sensirion/sen50-sdn-t/particle-sensor-dust-digital-5v/dp/3953034?srsltid=AfmBOorvVw0ERm18eGjQajDrGZsDv7g6_JHfXTA9BqazueTBrIli2FY9)  
 **HEPA Filter** - 20cm diameter, 29cm height(Standard MI air purifier Filter) 
 **DC/AC Fan** 120mm*120mm, 12V DC Fan  
 **Microcontroller** Arduino Nano  
