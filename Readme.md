@@ -20,3 +20,11 @@ This project includes both the **hardware setup** and **Arduino-based control co
 
 ## Circuit Diagram
 <img width="2510" height="1846" alt="Image" src="https://github.com/user-attachments/assets/49375fba-0313-42cc-9949-37971629fafe" />
+
+## Software and Package Required
+**Arduino IDE**  
+The libraries required are listed below  
+- Wire.h
+- Adafruit_GFX.h
+- Adafruit_SSD1306.h
+- SensirionI2CSen5x.h
