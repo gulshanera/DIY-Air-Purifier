@@ -144,3 +144,4 @@ There are 3 parts in the model. **Top(Cover)**, **Middle(Hardware mounting)**, a
 
 The top cover includes a slot for the OLED display, which can be secured on the designated pads using M2 screws (1–2 screws are sufficient). The other components—such as the SEN50 PM<sub>2.5</sub> sensor, L298N motor driver, Arduino Nano, and fan—should be installed at the positions indicated below.  
 ![Image](https://github.com/user-attachments/assets/368e49c1-a0a3-4169-99fc-fa099cbbc6c5)
+While installing, make sure the top cover matches the boles created for the SEN50 sensor and the landing legs on the cover is matching with holes on the middle part. Lastly, the bottom HEPA filter cover should be added to the middle part by the M2 screw through the allocated holes.
