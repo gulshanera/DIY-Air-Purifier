@@ -15,7 +15,7 @@ This project includes both the **hardware setup** and **Arduino-based control co
 **HEPA Filter** - 20cm diameter, 29cm height(Standard MI air purifier Filter) [Link](https://amzn.in/d/hq0hpHi)  
 **DC/AC Fan** - 120mm*120mm, 12V DC Fan [Link](https://amzn.in/d/9E89Q2z)  
 **Microcontroller** - Arduino Nano [Link](https://in.element14.com/arduino/a000005/arduino-nano-evaluation-board/dp/1848691)  
-**Power supply** - L298N Motor Driver [Link](https://in.element14.com/dfrobot/dri0002/dc-motor-controller-mdv-2x2a-board/dp/3517873) 
+**Power supply** - L298N Motor Driver [Link](https://in.element14.com/dfrobot/dri0002/dc-motor-controller-mdv-2x2a-board/dp/3517873)  
 **Display** - 0.96inch OLED display [Link](https://in.element14.com/midas/mdob128064wv-ybi/graphic-oled-cob-128-x-64pixel/dp/3565084)  
 
 ## 
