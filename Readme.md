@@ -16,7 +16,7 @@ This project includes both the **hardware setup** and **Arduino-based control co
 **Power Supply** - 12V 2amp DC power supply [Link](https://robu.in/product/standard-12v-2a-power-supply-with-5-5mm-dc-plug-3-pin-input-plug/?gad_source=1&gad_campaignid=17427802559&gbraid=0AAAAADvLFWcdk5uJLfCHM6De_ulopqTzH&gclid=Cj0KCQjw_L_FBhDmARIsAItqgt7zm-Y9qGKT5erz5DKq4dK9PpbFHKkZJMZmfQivdFSZSkS9uHrLNrsaAgeSEALw_wcB)  
 **DC/AC Fan** - 120mm*120mm, 12V DC Fan [Link](https://amzn.in/d/9E89Q2z)  
 **Microcontroller** - Arduino Nano [Link](https://in.element14.com/arduino/a000005/arduino-nano-evaluation-board/dp/1848691)  
-**Power supply** - L298N Motor Driver [Link](https://in.element14.com/dfrobot/dri0002/dc-motor-controller-mdv-2x2a-board/dp/3517873)  
+**Motor Driver** - L298N Motor Driver [Link](https://in.element14.com/dfrobot/dri0002/dc-motor-controller-mdv-2x2a-board/dp/3517873)  
 **Display** - 0.96inch OLED display [Link](https://in.element14.com/midas/mdob128064wv-ybi/graphic-oled-cob-128-x-64pixel/dp/3565084)  
 
 ## Circuit Diagram
