@@ -24,7 +24,7 @@ This project includes both the **hardware setup** and **Arduino-based control co
 ## Software and Package Required
 **Arduino IDE**  
 The libraries required are listed below  
-- Wire.h
-- Adafruit_GFX.h
-- Adafruit_SSD1306.h
-- SensirionI2CSen5x.h
+- Wire.h (Arduino Core Component)
+- Adafruit_GFX.h [Link](https://github.com/adafruit/Adafruit-GFX-Library)  
+- Adafruit_SSD1306.h [Link](https://github.com/adafruit/Adafruit_SSD1306)  
+- SensirionI2CSen5x.h [Link](https://github.com/Sensirion/arduino-i2c-sen5x)  
