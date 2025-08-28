@@ -141,3 +141,5 @@ void loop() {
 **3D Parts**  
 There are 3 parts in the model. **Top(Cover)**, **Middle(Hardware mounting)**, and the **Bottom part(Hepa Mount)**
 <img width="1719" height="1553" alt="Image" src="https://github.com/user-attachments/assets/3022ccb8-ffc7-43e0-89d1-9ccf57ec33a6" />
+
+The Top cover has an opening for the OLED screen, which can be mounted on the allocated pads using M2 screws. 1-2 screw are enough for mounting the OLED. Other components like PM
