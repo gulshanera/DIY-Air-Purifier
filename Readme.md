@@ -140,3 +140,4 @@ void loop() {
 ## 3D Printed Parts and Assembly Guidelines
 **3D Parts**  
 There are 3 parts in the model. **Top(Cover)**, **Middle(Hardware mounting)**, and the **Bottom part(Hepa Mount)**
+<img width="1719" height="1553" alt="Image" src="https://github.com/user-attachments/assets/3022ccb8-ffc7-43e0-89d1-9ccf57ec33a6" />
