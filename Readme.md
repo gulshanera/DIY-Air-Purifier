@@ -9,3 +9,11 @@ This project includes both the **hardware setup** and **Arduino-based control co
 **Energy Efficient** – Runs at lower speeds when air quality is good, saving power.  
 **HEPA Filtration** – Effective particle removal for healthier indoor air.  
 **Open Source** – Hardware design, circuit, and code freely available.  
+
+## Hardware Requirements
+**PM<sub>2.5</sub> Sensor** - Sensirion's SEN50  
+**HEPA Filter** - 20cm diameter, 29cm height(Standard MI air purifier Filter) 
+**DC/AC Fan** 120mm*120mm, 12V DC Fan  
+**Microcontroller** Arduino Nano  
+**Power supply** L298N Motor Driver  
+**Display** 0.96inch OLED display  
