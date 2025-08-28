@@ -13,6 +13,7 @@ This project includes both the **hardware setup** and **Arduino-based control co
 ## Hardware Requirements
 **PM<sub>2.5</sub> Sensor** - Sensirion's SEN50 [Link](https://in.element14.com/sensirion/sen50-sdn-t/particle-sensor-dust-digital-5v/dp/3953034?srsltid=AfmBOorvVw0ERm18eGjQajDrGZsDv7g6_JHfXTA9BqazueTBrIli2FY9)  
 **HEPA Filter** - 20cm diameter, 29cm height(Standard MI air purifier Filter) [Link](https://amzn.in/d/hq0hpHi)  
+**Power Supply** - 12V 2amp DC power supply [Link](https://robu.in/product/standard-12v-2a-power-supply-with-5-5mm-dc-plug-3-pin-input-plug/?gad_source=1&gad_campaignid=17427802559&gbraid=0AAAAADvLFWcdk5uJLfCHM6De_ulopqTzH&gclid=Cj0KCQjw_L_FBhDmARIsAItqgt7zm-Y9qGKT5erz5DKq4dK9PpbFHKkZJMZmfQivdFSZSkS9uHrLNrsaAgeSEALw_wcB)  
 **DC/AC Fan** - 120mm*120mm, 12V DC Fan [Link](https://amzn.in/d/9E89Q2z)  
 **Microcontroller** - Arduino Nano [Link](https://in.element14.com/arduino/a000005/arduino-nano-evaluation-board/dp/1848691)  
 **Power supply** - L298N Motor Driver [Link](https://in.element14.com/dfrobot/dri0002/dc-motor-controller-mdv-2x2a-board/dp/3517873)  
@@ -129,3 +130,8 @@ void loop() {
   delay(1000);
 }
 ```
+## Setup Instruction
+**Hardware Setup Instruction**
+- For a beginner, I recommend testing each component one by one before assembling the entire circuit.
+- Pull-up resistor is compulsory in Arduino nano for I2C communication [Video](https://www.youtube.com/watch?v=Z1_Ag3dxH34&t=75s), [Website](https://www.totalphase.com/blog/2024/07/what-are-i2c-pull-up-resistors-calculate-their-values/?srsltid=AfmBOooVGtZDZ16jqQqMrEwgEsxJL0CeHHH9oVToXDv3ci8wbzIYAD7i)
+- For the entire circuit, including the 12V DC motor, power is provided by a 12V DC adapter. 
