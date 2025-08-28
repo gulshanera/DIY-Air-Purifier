@@ -143,4 +143,4 @@ There are 3 parts in the model. **Top(Cover)**, **Middle(Hardware mounting)**, a
 <img width="1719" height="1553" alt="Image" src="https://github.com/user-attachments/assets/3022ccb8-ffc7-43e0-89d1-9ccf57ec33a6" />
 
 The top cover includes a slot for the OLED display, which can be secured on the designated pads using M2 screws (1–2 screws are sufficient). The other components—such as the SEN50 PM<sub>2.5</sub> sensor, L298N motor driver, Arduino Nano, and fan—should be installed at the positions indicated below.  
-
+![Image](https://github.com/user-attachments/assets/368e49c1-a0a3-4169-99fc-fa099cbbc6c5)
