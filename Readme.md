@@ -134,4 +134,9 @@ void loop() {
 **Hardware Setup Instruction**
 - For a beginner, I recommend testing each component one by one before assembling the entire circuit.
 - Pull-up resistor is compulsory in Arduino nano for I2C communication [Video](https://www.youtube.com/watch?v=Z1_Ag3dxH34&t=75s), [Website](https://www.totalphase.com/blog/2024/07/what-are-i2c-pull-up-resistors-calculate-their-values/?srsltid=AfmBOooVGtZDZ16jqQqMrEwgEsxJL0CeHHH9oVToXDv3ci8wbzIYAD7i)
-- For the entire circuit, including the 12V DC motor, power is provided by a 12V DC adapter. 
+- For the entire circuit, including the 12V DC motor, power is provided by a 12V DC adapter. Please be careful with the connection. Don't fry the nano.
+- Test the entire circuit before going for the final assembly.
+
+## 3D Printed Parts and Assembly Guidelines
+**3D Parts**
+There are 3 parts in the model. **Top(Cover)**, **Middle(Hardware mounting)**, and the **Bottom part(Hepa Mount)**
