@@ -138,5 +138,5 @@ void loop() {
 - Test the entire circuit before going for the final assembly.
 
 ## 3D Printed Parts and Assembly Guidelines
-**3D Parts**
+**3D Parts**  
 There are 3 parts in the model. **Top(Cover)**, **Middle(Hardware mounting)**, and the **Bottom part(Hepa Mount)**
