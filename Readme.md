@@ -20,6 +20,9 @@ This project includes both the **hardware setup** and **Arduino-based control co
 **Display** - 0.96inch OLED display [Link](https://in.element14.com/midas/mdob128064wv-ybi/graphic-oled-cob-128-x-64pixel/dp/3565084)  
 
 ## Circuit Diagram for **2 Pin 12v DC Fan**
+Both **2-pin** and **3-pin DC fans** can be used in this project.  
+For controlling a 2-pin DC fan, we used an **L298N motor driver module** since it was readily available. Other methods, like MOSFET transistors, can also be used.
+
 <img width="2510" height="1846" alt="Image" src="https://github.com/user-attachments/assets/49375fba-0313-42cc-9949-37971629fafe" />  
 
 ## Circuit Diagram for **3 Pin PWM 12v DC Fan**
