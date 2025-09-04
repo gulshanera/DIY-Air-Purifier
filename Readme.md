@@ -31,7 +31,8 @@ This approach simplifies the circuit design since no external motor driver is re
 
 ⚠️ However, PWM fans are generally **more expensive** than standard 2-pin fans, which can increase the overall cost of the project.
 
-<img width="2365" height="2153" alt="Image" src="https://github.com/user-attachments/assets/4a9639f9-ba3d-4d45-8d29-1d19b0e6c5d8" />
+<img width="2365" height="2153" alt="Image" src="https://github.com/user-attachments/assets/4a9639f9-ba3d-4d45-8d29-1d19b0e6c5d8" />  
+
 ## Software and Package Required
 **Arduino IDE**  
 The libraries required are listed below  
