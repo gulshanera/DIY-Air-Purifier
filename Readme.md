@@ -19,7 +19,7 @@ This project includes both the **hardware setup** and **Arduino-based control co
 **Motor Driver** - L298N Motor Driver [Link](https://in.element14.com/dfrobot/dri0002/dc-motor-controller-mdv-2x2a-board/dp/3517873)  
 **Display** - 0.96inch OLED display [Link](https://in.element14.com/midas/mdob128064wv-ybi/graphic-oled-cob-128-x-64pixel/dp/3565084)  
 
-## Circuit Diagram
+## Circuit Diagram for 2 Pin 12v DC Fan
 <img width="2510" height="1846" alt="Image" src="https://github.com/user-attachments/assets/49375fba-0313-42cc-9949-37971629fafe" />
 
 ## Software and Package Required
