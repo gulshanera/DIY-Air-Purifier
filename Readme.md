@@ -19,6 +19,16 @@ This project includes both the **hardware setup** and **Arduino-based control co
 **Motor Driver** - L298N Motor Driver [Link](https://in.element14.com/dfrobot/dri0002/dc-motor-controller-mdv-2x2a-board/dp/3517873)  
 **Display** - 0.96inch OLED display [Link](https://in.element14.com/midas/mdob128064wv-ybi/graphic-oled-cob-128-x-64pixel/dp/3565084)  
 
+## PM sensor  
+The current design supports **three Sensirion models**: **SEN50, SEN54, and SEN55**.  
+All of them share the same physical footprint, making them interchangeable in this setup.  
+
+- **SEN50** → Reports only **particulate matter (PM) values**, which are sufficient for the current application.  
+- **SEN54 / SEN55** → Provide additional measurements such as **temperature, humidity, VOC, and NO<sub>x</sub>**, but come at a higher cost.  
+
+👉 You can choose the sensor model based on the required parameters and budget.
+
+
 ## Circuit Diagram for **2 Pin 12v DC Fan**
 Both **2-pin** and **3-pin DC fans** can be used in this project.  
 For controlling a 2-pin DC fan, we used an **L298N motor driver module** since it was readily available. Other methods, like MOSFET transistors, can also be used.
