@@ -20,7 +20,8 @@ This project includes both the **hardware setup** and **Arduino-based control co
 **Display** - 0.96inch OLED display [Link](https://in.element14.com/midas/mdob128064wv-ybi/graphic-oled-cob-128-x-64pixel/dp/3565084)  
 
 ## Circuit Diagram for 2 Pin 12v DC Fan
-<img width="2510" height="1846" alt="Image" src="https://github.com/user-attachments/assets/49375fba-0313-42cc-9949-37971629fafe" />
+<img width="2510" height="1846" alt="Image" src="https://github.com/user-attachments/assets/49375fba-0313-42cc-9949-37971629fafe" />  
+
 ## Circuit Diagram for 3 Pin 12v DC Fan
 <img width="2365" height="2153" alt="Image" src="https://github.com/user-attachments/assets/4a9639f9-ba3d-4d45-8d29-1d19b0e6c5d8" />
 ## Software and Package Required
