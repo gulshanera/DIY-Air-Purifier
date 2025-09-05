@@ -54,10 +54,9 @@ This approach simplifies the circuit design since no external motor driver is re
 **Arduino IDE**  
 The libraries required are listed below  
 - **Wire.h** (Arduino Core Component)
-- **Adafruit_GFX.h** [Link](https://github.com/adafruit/Adafruit-GFX-Library)  
-- **Adafruit_SSD1306.h** For controlling OLED Display [Link](https://github.com/adafruit/Adafruit_SSD1306)  
 - **SensirionI2CSen5x.h** For controlling Sensirion Sen50 sensor [Link](https://github.com/Sensirion/arduino-i2c-sen5x)  
-
+- **U8g2lib.h** For controlling the OLED Display
+  
 ## Code
 ```
 #include <Wire.h>
