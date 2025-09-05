@@ -57,102 +57,125 @@ The libraries required are listed below
 ## Code
 ```
 #include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include <U8g2lib.h>
 #include <SensirionI2CSen5x.h>
 
-#define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 64
-#define OLED_RESET    -1
-#define SCREEN_ADDRESS 0x3C  // Usually 0x3C for 128x64
+//U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);      //Uncomment for 1.3 OLED
+U8G2_SSD1306_128X64_VCOMH0_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);       //Uncomment for .96 OLED
 
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 SensirionI2CSen5x sen5x;
 
-#define MOTOR_PIN 3   // Use PWM capable pin (3, 5, 6, 9, 10, 11 on Nano)
+#define MOTOR_PIN 3
 
 void setup() {
   Serial.begin(9600);
   Wire.begin();
-
   pinMode(MOTOR_PIN, OUTPUT);
+  u8g2.begin();
 
-  // Init display
-  if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
-    Serial.println(F("SSD1306 allocation failed"));
-    for (;;);
-  }
-  display.clearDisplay();
-  display.display();
-
-  // Init sensor
   sen5x.begin(Wire);
   uint16_t error;
 
   error = sen5x.deviceReset();
-  if (error) {
-    Serial.println("Reset failed!");
-  }
+  Serial.print("Reset: "); Serial.println(error);
 
   error = sen5x.startMeasurement();
-  if (error) {
-    Serial.println("Start measurement failed!");
-  }
+  Serial.print("Start: "); Serial.println(error);
 
   delay(2000);
 }
 
 void loop() {
   uint16_t error;
-
-  // Variables for PM readings
   float mc_1p0, mc_2p5, mc_4p0, mc_10p0;
-  float nc_0p5, nc_1p0, nc_2p5, nc_4p0, nc_10p0;
-  float typical_particle_size;
+  float temp, humidity, voc, nox;
 
-  error = sen5x.readMeasuredPmValues(
+  error = sen5x.readMeasuredValues(
               mc_1p0, mc_2p5, mc_4p0, mc_10p0,
-              nc_0p5, nc_1p0, nc_2p5, nc_4p0, nc_10p0,
-              typical_particle_size);
+              humidity, temp, voc, nox);
 
-  display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(0, 0);
+  u8g2.clearBuffer();
+  u8g2.setFont(u8g2_font_6x12_tf);
 
   if (!error) {
-    // Show PM2.5
-    Serial.print("PM2.5: ");
-    Serial.println(mc_2p5, 1);
+    u8g2.setCursor(0, 12);
+    u8g2.print("PM2.5: ");
+    u8g2.print(mc_2p5, 1);
 
-    display.print("PM2.5: ");
-    display.print(mc_2p5, 1);
-    display.println(" ug/m3");
+    u8g2.setCursor(0, 28);
+    u8g2.print("Temp: ");
+    u8g2.print(temp, 1);
 
-    // Control motor based on PM2.5
+    u8g2.setCursor(0, 44);
+    u8g2.print("RH: ");
+    u8g2.print(humidity, 1);
+    u8g2.print(" %");
+
     int pwmValue = 0;
-    if (mc_2p5 <= 50) {
+    if (mc_2p5 <= 30) {
       pwmValue = 100;
     } else if (mc_2p5 <= 100) {
       pwmValue = 200;
     } else {
       pwmValue = 255;
     }
-
+    
     analogWrite(MOTOR_PIN, pwmValue);
-
-    display.print("Fan PWM: ");
-    display.println(pwmValue);
+    float fanspeed=(pwmValue/255.0)*100.0;
+    u8g2.setCursor(0, 60);
+    u8g2.print("Fan Speed: ");
+    u8g2.print(fanspeed,1);
+    u8g2.print(" %");
 
   } else {
-    Serial.println("Read error!");
-    display.println("Sensor Error");
-    analogWrite(MOTOR_PIN, 0); // stop motor if error
+    u8g2.setCursor(0, 30);
+    u8g2.print("Sensor Err ");
+    u8g2.print(error);
+    analogWrite(MOTOR_PIN, 0);
   }
-
-  display.display();
+  
+  drawSmiley(mc_2p5);
+  u8g2.sendBuffer();
   delay(1000);
 }
+
+void drawSmiley(int pm25) {
+  int x = 100;   // X position (top-right)
+  int y = 20;    // Y position
+  int r = 16;    // face radius
+
+  // Face outline
+  u8g2.drawCircle(x, y, r, U8G2_DRAW_ALL);
+
+  // Eyes
+  u8g2.drawDisc(x-6, y-5, 2);
+  u8g2.drawDisc(x+6, y-5, 2);
+
+  // Mouth based on PM2.5
+if (pm25 <= 30) {
+  // 😀 big smile
+  u8g2.drawArc(x, y+3, 6, 125, 260);
+} else if (pm25 <= 60) {
+  // 🙂 small smile
+  u8g2.drawArc(x, y+3, 6, 140, 240);
+} else if (pm25 <= 90) {
+  // 😐 flat
+  u8g2.drawLine(x-6, y+5, x+6, y+5);
+} else if (pm25 <= 120) {
+  // 🙁 small frown
+  u8g2.drawArc(x, y+8, 6, 280, 100);
+} else if (pm25 <= 250) {
+  // 😣 big frown
+  u8g2.drawArc(x, y+8, 6, 250, 130);
+} else {
+  // 😷 mask
+  u8g2.drawBox(x-8, y+2, 16, 10);
+  u8g2.drawLine(x-8, y+2, x-14, y);
+  u8g2.drawLine(x+8, y+2, x+14, y);
+}
+
+}
+
 ```
 ## Setup Instruction
 **Hardware Setup Instruction**
