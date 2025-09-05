@@ -31,6 +31,7 @@ All of them share the same physical footprint, making them interchangeable in th
 ## .9 inch vs 1.3 inch OLED Display  
 **Current design files support both `0.96-inch` and `1.3-inch` OLED displays.**  
 Please note that the pin locations for **`VCC`** and **`GND`** may vary depending on the display module, so always check the OLED **pinout** before connecting it to the circuit.
+<img width="2192" height="745" alt="Image" src="https://github.com/user-attachments/assets/c054efee-0357-4398-a1f2-4a2fd0caddaf" />  
 
 ## Circuit Diagram for **2 Pin 12v DC Fan**
 Both **2-pin** and **3-pin DC fans** can be used in this project.  
