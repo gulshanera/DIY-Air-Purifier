@@ -55,7 +55,7 @@ This approach simplifies the circuit design since no external motor driver is re
 The libraries required are listed below  
 - **Wire.h** (Arduino Core Component)
 - **SensirionI2CSen5x.h** For controlling Sensirion Sen50 sensor [Link](https://github.com/Sensirion/arduino-i2c-sen5x)  
-- **U8g2lib.h** For controlling the OLED Display
+- **U8g2lib.h** For controlling the OLED Display [Link](https://github.com/olikraus/u8g2)
   
 ## Code
 ```
