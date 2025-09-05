@@ -28,6 +28,9 @@ All of them share the same physical footprint, making them interchangeable in th
 
 👉 You can choose the sensor model based on the required parameters and budget.
 
+## .9 inch vs 1.3 inch OLED Display  
+**Current design files support both `0.96-inch` and `1.3-inch` OLED displays.**  
+Please note that the pin locations for **`VCC`** and **`GND`** may vary depending on the display module, so always check the OLED **pinout** before connecting it to the circuit.
 
 ## Circuit Diagram for **2 Pin 12v DC Fan**
 Both **2-pin** and **3-pin DC fans** can be used in this project.  
