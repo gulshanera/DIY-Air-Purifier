@@ -34,6 +34,7 @@ Both **2-pin** and **3-pin DC fans** can be used in this project.
 For controlling a 2-pin DC fan, we used an **L298N motor driver module** since it was readily available. Other methods, like MOSFET transistors, can also be used.
 
 <img width="2510" height="1846" alt="Image" src="https://github.com/user-attachments/assets/49375fba-0313-42cc-9949-37971629fafe" />  
+
 ### Assembly  
 <img width="1690" height="812" alt="Image" src="https://github.com/user-attachments/assets/821a62e2-41ba-4848-b545-61cc15a72f58" />
 
