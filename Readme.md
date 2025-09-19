@@ -198,6 +198,6 @@ While installing, make sure the top cover matches the holes created for the SEN5
 
 <img width="210" height="112" alt="oshw_facts" src="https://github.com/user-attachments/assets/33640976-31aa-472c-972d-a6f8a911e5b4" />
 
-Guess what? This project is certified by Open Source Hardware Association 😁
+Guess what? This project is certified by Open Source Hardware Association 🙂
 <img width="590" height="165" alt="image" src="https://github.com/user-attachments/assets/b39780db-4f53-4ac9-806e-eeeb45b641ec" />
 
