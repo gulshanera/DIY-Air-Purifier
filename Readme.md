@@ -197,3 +197,7 @@ The top cover includes a slot for the OLED display, which can be secured on the 
 While installing, make sure the top cover matches the holes created for the SEN50 sensor and the landing legs on the cover match with holes on the middle part. Lastly, the bottom HEPA filter cover should be added to the middle part by the M2 screw through the allocated holes.
 
 <img width="210" height="112" alt="oshw_facts" src="https://github.com/user-attachments/assets/33640976-31aa-472c-972d-a6f8a911e5b4" />
+
+Guess what? This project is certified by Open Source Hardware Association 😁
+<img width="590" height="165" alt="image" src="https://github.com/user-attachments/assets/b39780db-4f53-4ac9-806e-eeeb45b641ec" />
+
